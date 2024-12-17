@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+}
+.book-wrapper {
+  width: 325px;  
+  height: 450px;
+  position: relative;
+}
+.book-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+
+.book-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(https://github.com/slyka85/assets/blob/master/elegant-wallpaper-13.jpg?raw=true);
+  background-position-x: -55px;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 0 5px 5px 0;
+}
+
+
+.book-left {
+  position: absolute;
+  width: 40px;
+  left: -20px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://github.com/slyka85/assets/blob/master/elegant-wallpaper-13.jpg?raw=true);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1) 100%), url(https://github.com/slyka85/assets/blob/master/elegant-wallpaper-13.jpg?raw=true);
+  background-position-x: -19px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.book-front:before {
+    content: "";
+    width: 3px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    bottom: 0;
+    background: rgba(0,0,0,0.2);
+    box-shadow: 1px 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.side {
+  position: absolute;
+  height: 100%;
+  transform-style: preserve-3d;
+  font-family: 'Sacramento';
+  letter-spacing: 1px;
+}
+.side .cover {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  display: block;
+  color: #f0c9d0;
+  font-size: 45px;
+  background: rgba(74, 32, 100, 0.3);
+  position: absolute;
+  width: 100%;
+  top: 35%;
+}
+
+.shine {
+/*   position: absolute;
+  width: 150%;
+  height: 150%;
+  background: linear-gradient(270deg, rgba(5, 5, 5, .3), rgba(5, 5, 5, .4) 50%, rgba(5, 5, 5, 0) 50%) no-repeat;
+    transform: rotate(15deg);
+  mask: linear-gradient(top, #fff, transparent 50%);
+  top: -10%; */
+}
+
+
+.spine-text {
+ transform-origin: 0% 0%;
+  transform: rotate(90deg) translateY(-40px);
+  width: 450px;
+  height: 40px;
+  line-height: 45px;
+  color: #f0c9d0;;
+  display: block;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 16px;
+  font-family: 'Indie Flower', cursive;
+}
